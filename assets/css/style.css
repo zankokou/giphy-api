@@ -1,13 +1,28 @@
 
 
 img{
-    width: 200px;
-    height: auto;
     display: block;
+    height: 200px;
+    margin: 0px;
+
 }
 
 #gify-area{
     font-weight: bolder;
+    z-index: 5;
+    padding: 0px;
+    margin: 0px;
     
+}
+
+.btnTopic{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#holder{
+    float: left;
+    margin: 15px;
+
 }
 
