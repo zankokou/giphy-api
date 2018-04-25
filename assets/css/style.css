@@ -1,18 +1,80 @@
 
+body{
+    background-image: url('../css/images/background.png');
+    background-size: cover;
+    background-position: fixed;
+    background-repeat: no-repeat;
+    text-shadow:  0 0 20px #0000FF;
+}
+
+
 
 img{
     display: block;
     height: 200px;
     margin: 0px;
+    box-shadow: 0px 0px 5px #fff;
+}
 
+img:hover{
+    box-shadow: 0px 0px 100px #fff;
+}
+
+.btn{
+    padding: 10px 20px 10px 20px;
+    margin: 6px 3px 0px 3px;
+    text-shadow:  0 0 20px #0000FF;
+}
+
+.go{
+    margin-top: -8px;
+}
+
+@font-face {
+    font-family: hollow;
+    src: url(pkmnHollow.ttf);
+ }
+ 
+ @font-face {
+    font-family: solid;
+    src: url(pkmnSolid.ttf);
+ }
+
+h1{
+    color: white;
+    text-shadow:  0 0 20px #0000FF;
+    font-family: solid;
+    text-align: center;
+    font-size: 54px;
 }
 
 #gify-area{
+    clear:both;
     font-weight: bolder;
     z-index: 5;
     padding: 0px;
     margin: 0px;
-    
+    margin-left: 50px;
+    margin-right: 50px;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    color: white;   
+}
+
+#gif-form{
+    float: right;
+    font-family: hollow;
+
+}
+
+p{
+    color:white;
+}
+
+.btn-box{
+    font-family: hollow;
+    margin-top: 50px;
+    padding: 20px 50px 20px 50px; 
+    font-weight: normal;
 }
 
 .btnTopic{

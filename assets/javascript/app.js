@@ -8,7 +8,8 @@ $(document).ready(function(){
 var apiKey = "xJPC9qjcbQjUligbItqoskssH5Cd0KpZ";
 
 // dynamically create buttons
-var topics = ['Squirtle', 'Pikachu', 'Charizard', 'Gengar', 'Larvitar', 'Mew', 'Mewtwo', 'Chimchar'];
+var topics = ['Squirtle', 'Pikachu', 'Charizard', 'Gengar', 'Larvitar', 'Mew', 'Mewtwo', 'Chimchar', 'Jigglypuff',
+              'Jirachi', 'Bulbasaur','Articuno','Snorlax'];
 
 function renderButtons(){
     $('.btn-box').empty();
@@ -53,10 +54,10 @@ function displayGiphyButton(){
     
                 //get image assign attr and append
                 var imageDiv = $('<img>');
-                imageDiv.attr('src', results[i].images.downsized.url);
+                imageDiv.attr('src', results[i].images.downsized_still.url);
                 imageDiv.attr('data-still', results[i].images.downsized_still.url)
                 imageDiv.attr('data-animate', results[i].images.downsized.url)
-                imageDiv.attr('data-state','animate')
+                imageDiv.attr('data-state','still')
                 imageDiv.addClass('gifAPI');
 
 
@@ -72,11 +73,18 @@ function displayGiphyButton(){
 $('.go').on('click', function(e){
     e.preventDefault();
     var searchWord = $('#gify-input').val().trim();
+    if (searchWord === ''){
+
+    }
+    else{
+
     topics.push(searchWord);
 
     // console.log(topics);
     renderButtons();
 
+    $('#gify-input').val("");
+}
 
 });
 
